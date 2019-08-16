@@ -7,7 +7,7 @@ steps:
     environment:
       GO111MODULE: auto
     commands:
-      - go get github.com/inconshreveable/mousetrap
+      - GOOS=windows go get github.com/inconshreveable/mousetrap
       - GOOS=windows go get github.com/konsorten/go-windows-terminal-sequences
       - cd api
       - go get
